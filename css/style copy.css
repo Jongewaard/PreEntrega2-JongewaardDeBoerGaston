@@ -1,0 +1,47 @@
+/* SINTAXIS */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+section ol li {
+    color:blueviolet;
+}
+
+.parrafo_rojo {
+    color:red
+}
+
+
+
+.parrafo_rosa {
+    color:rgb(223, 78, 226);
+
+}
+
+/*
+Unidades absolutas
+pixeles
+
+Unidades relativas
+rem: depende del tamaño raiz
+porcentaje: bla
+viewport: esta mierda rellena la pantalla xd probalo!
+*/
+
+.hero {
+    color: rgb(red, green, blue);
+    background-image: url("../img/fondo.jpg");
+    width: 100%;
+    /* height: 80vh; */
+    height: calc(100vh - 100px);
+}
+
+.welcum {
+    color:black
+}
+
+header nav ul li {
+    display: inline-block;
+}

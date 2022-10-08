@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- <style>
+        section ol li {
+            color:blueviolet;
+        }
+    </style> -->
+    <title>Docu<span>m</span>ment </title>
+    <!-- span es un contenedor en linea, ideal para cambiar formato de texto por porciones -->
+</head>
+<body>
+    <header>
+        <nav>
+            <!-- lista desordenada unordened list -->
+            <ul>
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./pages/servicios.html">Servicio</a></li>
+                <li><a href="./pages/productos.html">Productos</a></li>
+                <li><a href="./pages/acercade.html">Acerca de</a></li>
+                <li><a href="./pages/contactos.html">Contactos</a></li>
+            </ul>
+            <!-- Enlace interno -->
+            <a href="#pieDePagina"> pie de página</a>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <p> contenido hero</p>
+
+        </section>
+        <section>
+        <!-- lista ordenada ordened list -->
+        <ol>
+            <li>Huevos</li>
+            <li>Leche</li>
+            <li>Harina</li>
+            <li>Manteca</li>
+        </ol>
+        </section>
+        <section>
+            <p style="color:blue">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit, ipsa odit obcaecati sit assumenda quia?
+                Aspernatur, neque quaerat laudantium corporis incidunt amet, ea velit minima labore itaque, odit voluptatum aliquid.
+            </p>
+            <p class="parrafo_rosa">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit, ipsa odit obcaecati sit assumenda quia?
+                Aspernatur, neque quaerat laudantium corporis incidunt amet, ea velit minima labore itaque, odit voluptatum aliquid.
+            </p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit, ipsa odit obcaecati sit assumenda quia?
+                Aspernatur, neque quaerat laudantium corporis incidunt amet, ea velit minima labore itaque, odit voluptatum aliquid.
+            </p>
+            <p class="parrafo_rojo">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit, ipsa odit obcaecati sit assumenda quia?
+                Aspernatur, neque quaerat laudantium corporis incidunt amet, ea velit minima labore itaque, odit voluptatum aliquid.
+            </p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit, ipsa odit obcaecati sit assumenda quia?
+                Aspernatur, neque quaerat laudantium corporis incidunt amet, ea velit minima labore itaque, odit voluptatum aliquid.
+            </p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit, ipsa odit obcaecati sit assumenda quia?
+                Aspernatur, neque quaerat laudantium corporis incidunt amet, ea velit minima labore itaque, odit voluptatum aliquid.
+            </p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit, ipsa odit obcaecati sit assumenda quia?
+                Aspernatur, neque quaerat laudantium corporis incidunt amet, ea velit minima labore itaque, odit voluptatum aliquid.
+            </p>
+
+        </section>
+<br><br><br>
+        <section>
+            <table>
+                <thead>
+                    <tr> <!-- fila -->
+                        <th>Nombre</th> <!-- encabezado (columnas)-->
+                        <th>Apellido</th>
+                        <th>DNI</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><!-- fila -->
+                        <td>Gaston</td>
+                        <td>Jongewaard de Boer</td>
+                        <td>32999633</td>
+                    </tr>
+                    <tr>
+                        <td>Pepito</td>
+                        <td>Perez</td>
+                        <td>45987456</td>
+                    </tr>
+                    <tr>
+                        <td>Shioligut</td>
+                        <td>Zhjujiaty</td>
+                        <td>32457896</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr> <!-- fila -->
+                        <th>Nombre</th> <!-- footer (columnas)-->
+                        <th>Apellido</th>
+                        <th>DNI</th>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+<br><br><br>
+        <section>
+            <form action="" method="" enctype="">
+                <div>
+                    <label for="nombre" placeholder="nombre :D">Nombre:</label>
+                    <input type="text" name="nombre">
+                </div>
+                <div>
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" name="apellido">
+                </div>
+                <div>
+                    <label for="correo">Correo:</label>
+                    <input type="email" name="correo">
+                </div>
+                <div>
+                    <label for="contrasenia">Contraseña:</label>
+                    <input type="password" name="contrasenia">
+                </div>
+                <div>
+                    <h3>Genero</h3>
+                    <div>
+                        <label for="masculino">Masculino</label>
+                        <input type="radio" name="masculino" id="">
+                        <label for="femenino">Femenino</label>
+                        <input type="radio" name="femenino" id="">
+                        <label for="otro">Otro</label>
+                        <input type="radio" name="otro" id="">
+                    </div>
+                </div>
+                <div>
+                    <select name="" id=""> Pais
+                        <option value="">Argentina</option>
+                        <option value="">Colombia</option>
+                        <option value="">Brasil</option>
+                    </select>
+                </div>
+                <div>
+                    <h3>Escribi un comentario</h3>
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                </div>
+            </form>
+        </section>
+
+<br><br><br>
+        <section>
+            <!-- con el iframe metemos videos de youtube o cachos de mapas -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26173.598470853194!2d-57.945436537573244!3d-34.91398219229924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2e63a518efa1b%3A0xab89cfc05dd742!2sPlaza%20San%20Mart%C3%ADn!5e0!3m2!1ses!2sar!4v1662426164443!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <!-- para meter audio a la pag -->
+            <audio src=""></audio>
+        </section>
+    </main> <!-- alt z para acomodar el texto en vsc -->
+    <footer id="pieDePagina">
+        <a href="https://www.facebook.com/"><img src="../img/facebook.png" alt=""></a>
+        <a href="https://www.instagram.com/"><img src="../img/instagram.png" alt=""></a>
+        <a href="https://twitter.com/"><img src="../img/gorjeo.png" alt=""></a>
+    </footer>
+</body>
+</html>
