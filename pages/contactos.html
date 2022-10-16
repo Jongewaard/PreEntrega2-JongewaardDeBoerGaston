@@ -1,31 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
-    <title>Document</title>
-</head>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Document</title>
+
+        <!-- Font Awesome Icons  -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+            integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+            crossorigin="anonymous" />
+
+        <!-- Google Fonts  -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+        <!-- Link CSS Bootstrap Externo -->
+        <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+
+        <!-- Link CSS Bootstrap Interno -->
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+
     <body>
-        <!-- Header -->
-        <header>
-            <div>
-                <h1>Mi compañía</h1>
+    <!-- Header -->
+    <header>
+        <!-- Bootstrap's navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html"><h1>Mi compañía</h1></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <!-- <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                        </li> -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="./servicios.html">Servicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./acercade.html">Acerca de</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contactos.html">Contacto</a>
+                        </li>
+                        <!-- DROPDOWN -->
+                        <!-- <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li> -->
+                        <!-- DISABLED ITEM -->
+                        <!-- <li class="nav-item">
+                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                        </li> -->
+                    </ul>
+                    <!-- SEARCHBOX -->
+                    <!-- <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form> -->
+                </div>
             </div>
-            <nav>
-                <!-- barra de navegación con lista desordenada -->
-                <ul>
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="./servicios.html">Servicio</a></li>
-                    <li><a href="./productos.html">Productos</a></li>
-                    <li><a href="./acercade.html">Acerca de</a></li>
-                    <li><a href="./contactos.html">Contactos</a></li>
-                </ul>
-                <!-- Enlace interno -->
-                <a href="#pieDePagina">Pie de página</a>
-            </nav>
-        </header>
+        </nav>
+        <!-- end Bootstrap's navbar -->
+
+        <!-- Mi navbar -->
+        <!-- <div>
+            <h1>Mi compañía</h1>
+        </div>
+        <nav> -->
+            <!-- barra de navegación con lista desordenada -->
+            <!-- <ul>
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./pages/servicios.html">Servicio</a></li>
+                <li><a href="./pages/productos.html">Productos</a></li>
+                <li><a href="./pages/acercade.html">Acerca de</a></li>
+                <li><a href="./pages/contactos.html">Contacto</a></li>
+            </ul> -->
+            <!-- Enlace interno -->
+            <!-- <a href="#pieDePagina">Pie de página</a>
+        </nav> -->
+        <!-- Fin Mi navbar -->
+
+    </header>
         <!-- Fin Header -->
         <!-- Main -->
         <main>
@@ -35,7 +113,6 @@
          </section>
             <!-- Formulario de contacto -->
         <section class="seccionContacto">
-            <h3>Contáctanos</h3>
             <div class="contenedorContacto">
                 <form action="">
                     <label for="pnombre">Nombre</label>
@@ -67,19 +144,35 @@
         </main>
         <!-- Fin Main -->
         <!-- Mensaje flotante -->
-        <div class="fixed">
+        <!-- <div class="fixed">
             <div>
                 <h5>de lunes a jueves</h5>
                 <p>8:00 a 18:00</p>
                 <h5>viernes hasta 17hs</h5>
             </div>
-        </div>
+        </div> -->
         <!-- Fin mensaje flotante -->
 
         <footer id="pieDePagina">
-            <a href="https://www.facebook.com/"><img src="../img/facebook.png" alt=""></a>
-            <a href="https://www.instagram.com/"><img src="../img/instagram.png" alt=""></a>
-            <a href="https://twitter.com/"><img src="../img/twttr.png" alt=""></a>
+            <!-- <a href="https://www.facebook.com/"><img src="./img/facebook.png" alt=""></a>
+                <a href="https://www.instagram.com/"><img src="./img/instagram.png" alt=""></a>
+                <a href="https://twitter.com/"><img src="./img/twttr.png" alt=""></a> -->
+
+            <ul class="social-icons">
+                <li>
+                    <a href="https://www.facebook.com/"><i class="fab fa-whatsapp"></i></a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li>
+                    <a href="https://www.snapchat.com/es"><i class="fab fa-snapchat"></i></a>
+                </li>
+            </ul>
         </footer>
+
     </body>
 </html>

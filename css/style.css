@@ -9,7 +9,7 @@
 }
 
 body {
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgb(0, 0, 0));
+    background-image: linear-gradient(to top, rgba(222, 168, 225, 0), rgb(85,107,169));
 }
 
 footer a img {
@@ -18,10 +18,11 @@ footer a img {
 }
 
 header {
-    background-color: black;
+    background-color: #556ba9;
+    color:rgba(0, 0, 0, 0.5);
     position: sticky;
     top: 0px;
-    height: 110px;
+    /* height: 110px; */
 }
 
 header h1 {
@@ -40,7 +41,7 @@ header nav ul{
 header nav ul li {
     display: inline-block;
     font-size: 20px;
-    /* background-color: black;
+    /* background-color: #7595eb;
     color: white; */
 }
 
@@ -56,7 +57,7 @@ header nav ul li a{
     background-image: url("../img/fondo.jpg");
     width: 100%;
     /* height: 80vh; */
-    height: calc(100vh - 110px);
+    height: calc(100vh - 94px);
     background-size: cover;
     /* background-attachment: fixed; */
 
@@ -71,8 +72,8 @@ viewport se ustiliza para layouts responsivos
 
 .hero div{
     color:white;
-    /* background-color: rgba(0, 0, 0, 0.5); */
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgb(0, 0, 0));
+    /* background-color: rgba(0, 0, 0, 0.5);  rgb(161,130,237) */
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgb(85,107,169));
     /* background-image: linear-gradient(45deg, #f3ec78, #af4261); */
     text-align: center;
     font-size: 50px;
@@ -117,13 +118,106 @@ viewport se ustiliza para layouts responsivos
     background-color: rgb(167, 185, 69);
 }
 
+.trabajos{
+    /* GRIDS */
+    display: grid;
+    grid-template-columns: 1fr;
+    /* grid-template-rows: 16% 16% 16% 16% 16% 16%; */
+    grid-auto-rows: 505px;
+    grid-template-areas:
+    "img1"
+    "img2"
+    "img3"
+    "img4"
+    "img5"
+    "img6"
+
+    ;
+}
+
+.imagen01{
+    grid-area: img1;
+}
+
+.imagen02{
+    grid-area: img2;
+}
+
+.imagen03{
+    grid-area: img3;
+}
+
+.imagen04{
+    grid-area: img4;
+}
+
+.imagen05{
+    grid-area: img5;
+}
+
+.imagen06{
+    grid-area: img6;
+}
+
+/* MEDIAS QUERIES */
+@media screen and (min-width:865px) {
+    .trabajos{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 33% 33% 33%;
+        grid-template-areas:
+        "img1 img2"
+        "img3 img4"
+        "img5 img6"
+
+        ;
+    }
+}
+
+@media screen and (min-width:1299px) {
+    .trabajos{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 50% 50%;
+        grid-template-areas:
+        "img1 img2 img3"
+        "img4 img5 img6"
+
+        ;
+    }
+}
+
+@media screen and (min-width:1700px) {
+    .trabajos{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 50% 50%;
+        grid-template-areas:
+        "img1 img2 img3 img4"
+        "img5 img5 img6 img6"
+
+        ;
+
+    }
+    .imagen05{
+        width: 800px;
+    }
+    .imagen06{
+        width: 800px;
+    }
+    .imagen05 img{
+        width: 800px;
+    }
+    .imagen06 img{
+        width: 800px;
+    }
+}
+
+
 .trabajos div{
     display: inline-block;
     text-align: center;
     margin: 20px;
-    border: 1px solid black;
+    border: 1px solid #7595eb;
     height: 500px;
-    /* width: 400px; */
+    width: 400px;
     /* border-radius: 15px; */
     box-shadow: 10px 11px 19px -4px rgba(0,0,0,0.72);
     -webkit-box-shadow: 10px 11px 19px -4px rgba(0,0,0,0.72);
@@ -133,7 +227,7 @@ viewport se ustiliza para layouts responsivos
 
 .trabajos div a {
     text-decoration: none;
-    background-color: black;
+    background-color: #7595eb;
     color: aliceblue;
     padding: 5px 10px 5px 10px;
     /* margin-bottom: 5000px; */
@@ -146,9 +240,14 @@ viewport se ustiliza para layouts responsivos
 .trabajos div img{
     width: 400px;
     height: 400px;
+    object-fit: cover;
     /* border-radius: 15px 15px 0 0 ; */
 }
 
+.galeria{
+    display: flex;
+    justify-content: center;
+}
 
 .galeria div{
     position: relative;
@@ -180,7 +279,6 @@ viewport se ustiliza para layouts responsivos
     bottom: 5%;
     /* background-color:#ee8100; */
     background-image:linear-gradient(to top, rgba(97, 4, 4, 0.797), rgba(255, 149, 0, 0.797));
-
     font-size: 20px;
     text-align: center;
     width: 200px;
@@ -189,15 +287,40 @@ viewport se ustiliza para layouts responsivos
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
     -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    transition-timing-function: ease;
+    transition: 0.5s;
+}
+
+.fixed:hover{
+    position: fixed;
+    right: 2.8%;
+    bottom: 4.8%;
+    /* background-color:#ee8100; */
+    background-image:linear-gradient(to top, rgba(97, 4, 4, 1), rgba(255, 149, 0, 1));
+    font-size: 20px;
+    text-align: center;
+    width: 206px;
+    color: white;
+    height: 206px;
+    border-radius: 100%;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+
 }
 
 .fixed div{
-    margin-top: 61px;
+    margin-top: 52px;
+}
+
+.fixed div p{
+    margin-top: 1px;
+    margin-bottom: 1px;
 }
 
 footer{
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.3);
+    /* background-color: rgba(0, 0, 0, 0.3); */
 }
 
 
@@ -283,3 +406,10 @@ input[type=submit]:hover {
 .social-icons li a:hover::before {
     transform: scale(0);
 }
+
+.seccionContacto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
