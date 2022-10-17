@@ -123,7 +123,7 @@ viewport se ustiliza para layouts responsivos
     display: grid;
     grid-template-columns: 1fr;
     /* grid-template-rows: 16% 16% 16% 16% 16% 16%; */
-    grid-auto-rows: 505px;
+    grid-auto-rows: 520px;
     grid-template-areas:
     "img1"
     "img2"
@@ -160,7 +160,36 @@ viewport se ustiliza para layouts responsivos
 }
 
 /* MEDIAS QUERIES */
-@media screen and (min-width:865px) {
+@media screen and (min-width:400px) {
+    .imagen01{
+        height: 400px;
+        width: 280px;
+    }
+    .imagen02{
+        height: 400px;
+        width: 280px;
+    }
+    .imagen03{
+        height: 400px;
+        width: 280px;
+    }
+    .imagen04{
+        height: 400px;
+        width: 280px;
+    }
+    .imagen05{
+        height: 400px;
+        width: 280px;
+    }
+    .imagen06{
+        height: 400px;
+        width: 280px;
+    }
+
+}
+
+
+@media screen and (min-width:800px) {
     .trabajos{
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 33% 33% 33%;
@@ -173,7 +202,7 @@ viewport se ustiliza para layouts responsivos
     }
 }
 
-@media screen and (min-width:1299px) {
+@media screen and (min-width:1150px) {
     .trabajos{
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 50% 50%;
@@ -196,7 +225,7 @@ viewport se ustiliza para layouts responsivos
         ;
 
     }
-    .imagen05{
+    /* .imagen05{
         width: 800px;
     }
     .imagen06{
@@ -207,7 +236,7 @@ viewport se ustiliza para layouts responsivos
     }
     .imagen06 img{
         width: 800px;
-    }
+    } */
 }
 
 
@@ -217,7 +246,7 @@ viewport se ustiliza para layouts responsivos
     margin: 20px;
     border: 1px solid #7595eb;
     height: 500px;
-    width: 400px;
+    width: 350px;
     /* border-radius: 15px; */
     box-shadow: 10px 11px 19px -4px rgba(0,0,0,0.72);
     -webkit-box-shadow: 10px 11px 19px -4px rgba(0,0,0,0.72);
@@ -238,7 +267,7 @@ viewport se ustiliza para layouts responsivos
 }
 
 .trabajos div img{
-    width: 400px;
+    width: 350px;
     height: 400px;
     object-fit: cover;
     /* border-radius: 15px 15px 0 0 ; */
