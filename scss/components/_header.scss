@@ -1,0 +1,42 @@
+@import "../base/variables";
+
+@font-face {
+    font-family: "Nasalization";
+    src: url("../../fonts/Nasalization.ttf");
+}
+
+
+
+
+
+header {
+    background-color: #556ba9;
+    color:rgba(0, 0, 0, 0.5);
+    position: sticky;
+    top: 0px;
+    /* height: 110px; */
+    h1 {
+        color:white;
+        font-size: 50px;
+        font-style: italic;
+        font-weight: 700;
+        font-family: 'Nasalization', serif;
+    }
+    nav {
+        ul{
+            list-style: none;
+            align-items: right;
+            li {
+                display: inline-block;
+                font-size: 20px;
+                a{
+                    text-decoration: none;
+                    color:white;
+
+                }
+                
+            }
+        }
+    }
+    }
+ 

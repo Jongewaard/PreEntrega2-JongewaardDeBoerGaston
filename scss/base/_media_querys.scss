@@ -1,0 +1,116 @@
+@import "./variables";
+
+
+/* MEDIAS QUERIES */
+@media screen and (min-width:400px) {
+    .imagen01 {
+        height: 400px;
+        width: 280px;
+    }
+
+    .imagen02 {
+        height: 400px;
+        width: 280px;
+    }
+
+    .imagen03 {
+        height: 400px;
+        width: 280px;
+    }
+
+    .imagen04 {
+        height: 400px;
+        width: 280px;
+    }
+
+    .imagen05 {
+        height: 400px;
+        width: 280px;
+    }
+
+    .imagen06 {
+        height: 400px;
+        width: 280px;
+    }
+
+
+
+}
+
+
+@media screen and (min-width:800px) {
+    .trabajos {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 33% 33% 33%;
+        grid-template-areas:
+            "img1 img2"
+            "img3 img4"
+            "img5 img6"
+        ;
+    }
+
+    .contacto {
+        grid-template-columns: 3fr 2fr;
+        grid-template-areas:
+            "parte01 parte02";
+    }
+
+    .galeria-2 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media screen and (min-width:1150px) {
+    .trabajos {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 50% 50%;
+        grid-template-areas:
+            "img1 img2 img3"
+            "img4 img5 img6"
+
+        ;
+    }
+
+    .contacto {
+        grid-template-columns: 5fr 2fr;
+        grid-template-areas:
+            "parte01 parte02";
+    }
+
+    .galeria-2 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .img-07 {
+        grid-row: span 3;
+    }
+}
+
+@media screen and (min-width:1700px) {
+    .trabajos {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas:
+            "img1 img2 img3 img4"
+            "img5 img5 img6 img6"
+        ;
+    }
+
+    .contacto {
+        grid-template-columns: 8fr 2fr;
+        grid-template-areas:
+            "parte01 parte02";
+    }
+
+    .galeria-2 {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .img-02 {
+        grid-column: span 2;
+    }
+
+    .img-16 {
+        grid-column: span 2;
+    }
+}

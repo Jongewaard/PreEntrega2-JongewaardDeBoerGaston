@@ -1,0 +1,113 @@
+@import "../base/variables";
+
+body {
+    background-image: linear-gradient(to top, rgba(222, 168, 225, 0), rgb(85,107,169));
+}
+
+
+.galeria{
+    display: flex;
+    justify-content: center;
+    div{
+        position: relative;
+        width: 350px;
+        height: 350px;
+        box-shadow: 10px 11px 19px -4px rgba(0,0,0,0.72);
+        -webkit-box-shadow: 10px 11px 19px -4px rgba(0,0,0,0.72);
+        -moz-box-shadow: 10px 11px 19px -4px rgba(0,0,0,0.72);
+        img{
+            width: 350px;
+            height: 350px;
+        }
+        h3{
+            position: absolute;
+            bottom: 50px;
+            background-color: rgba(0, 0, 0, 0.5);
+            width: 100%;
+            text-align: center;
+            color: aliceblue;
+            padding: 10px 0 10px 0;
+            a{
+                text-decoration: none;
+                color: aliceblue;
+
+            }
+        }
+        
+    }
+    
+}
+
+.fixed{
+    position: fixed;
+    right: 3%;
+    bottom: 5%;
+    /* background-color:#ee8100; */
+    background-image:linear-gradient(to top, $fixed_desde, $fixed_hasta);
+    font-size: 20px;
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    transition-timing-function: ease;
+    transition: 0.5s;
+    &:hover{
+        position: fixed;
+        right: 2.8%;
+        bottom: 4.8%;
+        /* background-color:#ee8100; */
+        background-image:linear-gradient(to top, rgba(97, 4, 4, 1), rgba(255, 149, 0, 1));
+        font-size: 20px;
+        text-align: center;
+        width: 206px;
+        color: white;
+        height: 206px;
+        border-radius: 100%;
+        box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+        -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    
+    }
+    div{
+        margin-top: 52px;
+        p{
+            margin-top: 1px;
+            margin-bottom: 1px;
+        }
+        
+    }
+    
+}
+
+.video_corporativo{
+    display: flex;
+    justify-content: center;
+    div{
+        width: 95%;
+        height: 85%;
+        padding: 3px;
+    }
+}
+
+.galeria-2{
+    width: 100%;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr; 
+    grid-auto-rows: 350px;
+    gap: 15px;
+
+    div{
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+}
+
+

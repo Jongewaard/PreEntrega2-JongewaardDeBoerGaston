@@ -1,0 +1,104 @@
+
+@import "./variables";
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,500;1,700&display=swap');
+@font-face {
+    font-family: "Nasalization";
+    src: url("../../fonts/Nasalization.ttf");
+}
+
+
+
+.hero {
+    color: rgb(255, 255, 255);
+    background-image: url("../img/fondo.jpg");
+    width: 100%;
+    /* height: 80vh; */
+    height: calc(100vh - 94px);
+    background-size: cover;
+    /* background-attachment: fixed; */
+    div{
+        color:white;
+        /* background-color: rgba(0, 0, 0, 0.5);  rgb(161,130,237) */
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgb(85,107,169));
+        /* background-image: linear-gradient(45deg, #f3ec78, #af4261); */
+        text-align: center;
+        font-size: 50px;
+        /* height: 400px; */
+        height: calc(100vh - 111.11px);
+        p{
+            img{
+                width: 85%;
+                height: auto;
+            }
+        }
+    }
+    
+}
+
+
+.contacto{ 
+    display: grid;
+    grid-template-columns: 1fr; 
+    grid-template-areas:
+    "parte01" 
+    "parte02";
+}
+
+.mapa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: parte01;
+    height: 719px;
+}
+
+.seccionContacto{
+    grid-area: parte02;
+}
+
+
+.seccionContacto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // width: 800px;
+}
+
+
+
+.contenedorContacto {
+    text-align: center;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    width: 85%;
+    height: 700px;
+
+}
+
+
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #FD841F;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    // background-color: #d267c3;
+    background-color: #E14D2A;
+}
